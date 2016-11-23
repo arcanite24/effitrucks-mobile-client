@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Effitrucks Mobile Client
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-list-header>
+      Iniciar Sesión
+    </ion-list-header>
+    <ion-item>
+      <ion-label floating >Nombre de usuario</ion-label>
+      <ion-input [(ngModel)]="loginUsername"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating >Contraseña</ion-label>
+      <ion-input [(ngModel)]="loginPassword"></ion-input>
+    </ion-item>
+  </ion-list>
+  <button ion-button block>Iniciar Sesión</button>
+  <ion-grid>
+    <ion-row>
+      <ion-col width-33>
+        <ion-icon name="logo-facebook"></ion-icon>
+      </ion-col>
+      <ion-col width-33>
+        <ion-icon name="logo-twitter"></ion-icon>
+      </ion-col>
+      <ion-col width-33>
+        <ion-icon name="logo-google"></ion-icon>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+

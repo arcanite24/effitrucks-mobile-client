@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Login
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-list-header>
+      Iniciar Sesión
+    </ion-list-header>
+    <ion-item>
+      <ion-label floating >Nombre de usuario</ion-label>
+      <ion-input [(ngModel)]="loginUsername"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating >Contraseña</ion-label>
+      <ion-input [(ngModel)]="loginPassword"></ion-input>
+    </ion-item>
+  </ion-list>
+  <button ion-button block>Iniciar Sesión</button>
+  <ion-grid>
+    <ion-row>      
+      <ion-col width-33 class="icon-container">
+        <button ion-button block icon-right color="primary">
+          Twitter
+          <ion-icon name="logo-twitter"></ion-icon>
+        </button>
+      </ion-col>
+      <ion-col width-33 class="icon-container">
+        <button ion-button block icon-right color="primary">
+          Google
+          <ion-icon name="logo-google"></ion-icon>
+        </button>
+      </ion-col>
+      <ion-col width-33 class="icon-container">
+        <button ion-button block icon-right color="primary">
+          Facebook
+          <ion-icon name="logo-facebook"></ion-icon>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
